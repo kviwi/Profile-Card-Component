@@ -14,11 +14,82 @@ body {
 }
 
 .container {
+  position: relative;
   width: 400px;
-  height: 500px;
+  height: 450px;
   background-color: white;
+  border-radius: 20px;
 }
 
-svg {
+.card-pattern {
   width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.person-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -125%);
+  border-radius: 60px;
+  border: 6px solid white;
+  width: 120px;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 126px;
+  padding-top: 80px;
+  font-size: 20px;
+  color: hsl(0, 0%, 59%);
+}
+
+.id {
+  display: flex;
+  gap: 10px;
+}
+
+.name {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+}
+
+.location {
+  padding-left: 40px;
+  font-size: 17px;
+}
+
+hr {
+  display: inline-block;
+  width: 100%;
+  color: hsl(0, 0%, 59%);
+  margin-top: 35px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+}
+
+.grid-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+}
+
+.numeral {
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+.label {
+  color: hsl(0, 0%, 59%);
+  font-size: 14px;
+  letter-spacing: 1.6px;
 }
